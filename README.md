@@ -7,4 +7,4 @@ Classes to copy and paste in your project.
 List of fuzzy classes:
 
 - FuzzyColor
-
+- FuzzyEmail

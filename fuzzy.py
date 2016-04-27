@@ -43,7 +43,7 @@ class FuzzyEmail(fuzzy.BaseFuzzyAttribute):
         self.use_common_providers = use_common_providers
 
     def fuzz(self):
-        if self.use_common_providers and fuzzy._random.randint(0, 1) == 1:
+        if self.use_common_providers:
             domain = self.common_email_providers[fuzzy._random.randint(0, len(self.common_email_providers))]
         else:
             domain = self.fuzzy_domain_part.fuzz() + '.' + self.domanins[fuzzy._random.randint(0, len(self.domanins))]

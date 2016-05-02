@@ -11,7 +11,7 @@ class FuzzyColor(BaseFuzzyAttribute):
 
 
 class FuzzyEmail(fuzzy.BaseFuzzyAttribute):
-    domanins = ['it', 'co.uk', 'ru', 'es', 'net', 'co.kr', 'fm', 'co.id', 'com.ph', 'net.mx', 'co.jp', 'co.in', 'com.sg', 'de', 'be', 'com.ar', 'com.mx', 'com', 'co.uk', 'fr']
+    domanins = ['it', 'co.uk', 'com']
 
     # thanks to https://github.com/mailcheck/mailcheck/wiki/List-of-Popular-Domains
     common_email_providers = [
@@ -44,8 +44,8 @@ class FuzzyEmail(fuzzy.BaseFuzzyAttribute):
 
     def fuzz(self):
         if self.use_common_providers:
-            domain = self.common_email_providers[fuzzy._random.randint(0, len(self.common_email_providers))]
+            domain = self.common_email_providers[fuzzy._random.randint(0, len(self.common_email_providers) - 1)]
         else:
-            domain = self.fuzzy_domain_part.fuzz() + '.' + self.domanins[fuzzy._random.randint(0, len(self.domanins))]
+            domain = self.fuzzy_domain_part.fuzz() + '.' + self.domanins[fuzzy._random.randint(0, len(self.domanins) - 1)]
 
         return self.fuzzy_user_part.fuzz() + '@' + domain

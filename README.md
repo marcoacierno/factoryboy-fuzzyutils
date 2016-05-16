@@ -25,7 +25,5 @@ from fuzzy_utils import fuzzy_utils
 
 # Fuzzy classes available
 
-List of fuzzy classes:
-
 - FuzzyColor
 - FuzzyEmail

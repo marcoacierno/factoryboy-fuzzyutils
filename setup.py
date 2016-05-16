@@ -1,13 +1,14 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 
 setup(
     name='fuzzy_utils',
-    version='1.1',
+    version='1.5',
     keywords=['factory_boy', 'fuzzy', 'utils'],
     description='Additional fuzzy classes for Factory boy',
     author='Marco Acierno',
     author_email='marcoaciernoemail@gmail.com',
+    packages=find_packages(),
     url='https://github.com/marcoacierno/factoryboy-fuzzyutils',
     license='MIT',
     classifiers=[

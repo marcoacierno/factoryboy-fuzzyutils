@@ -9,6 +9,7 @@ setup(
     author='Marco Acierno',
     author_email='marcoaciernoemail@gmail.com',
     packages=find_packages(),
+    install_requires=['factory_boy'],
     url='https://github.com/marcoacierno/factoryboy-fuzzyutils',
     license='MIT',
     classifiers=[

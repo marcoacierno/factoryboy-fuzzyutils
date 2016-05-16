@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='fuzzy_utils',
-    version='1.5',
+    version='1.6',
     keywords=['factory_boy', 'fuzzy', 'utils'],
     description='Additional fuzzy classes for Factory boy',
     author='Marco Acierno',

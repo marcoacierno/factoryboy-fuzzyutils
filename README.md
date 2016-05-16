@@ -22,7 +22,8 @@ from fuzzy_utils import fuzzy_utils
 
 ```
 
-Classes to copy and paste in your project.
+
+# Fuzzy classes available
 
 List of fuzzy classes:
 

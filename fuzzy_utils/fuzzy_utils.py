@@ -11,7 +11,7 @@ class FuzzyColor(BaseFuzzyAttribute):
 
 
 class FuzzyEmail(fuzzy.BaseFuzzyAttribute):
-    domanins = ['it', 'co.uk', 'com']
+    domanins = ['be', 'co.jp', 'net', 'com.mx', 'co.kr', 'co.uk', 'net.mx', 'fr', 'com.sg', 'de', 'co.id', 'es', 'com', 'com.ph', 'ru', 'fm', 'com.ar', 'co.in']
 
     # thanks to https://github.com/mailcheck/mailcheck/wiki/List-of-Popular-Domains
     common_email_providers = [
